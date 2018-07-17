@@ -1,0 +1,61 @@
+{
+  "name": "Tradstr",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "electron": "^1.4.14",
+    "electron-builder": "^19.52.1",
+    "foreman": "^2.0.0",
+    "react-scripts": "0.8.5"
+  },
+  "dependencies": {
+    "firebase": "^4.8.1",
+    "lodash": "^4.17.4",
+    "lowdb": "^1.0.0",
+    "moment": "^2.20.1",
+    "react": "^15.4.2",
+    "react-desktop": "^0.3.3",
+    "react-dom": "^15.4.2",
+    "react-rangeslider": "^2.2.0",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-stripe-elements": "^1.4.1",
+    "recharts": "^1.0.0-beta.7",
+    "semantic-ui": "^2.2.14",
+    "semantic-ui-react": "^0.77.1",
+    "socket.io-client": "^2.0.4",
+    "victory": "^0.24.3"
+  },
+  "homepage": "./",
+  "main": "build/electron.js",
+  "build": {
+    "appId": "com.tradstr.app",
+    "asar": false,
+    "files": [
+      "build/**/*",
+      "node_modules/**/*"
+    ],
+    "directories": {
+      "buildResources": "assets"
+    },
+    "mac": {
+      "category": "your.app.category.type"
+    }
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom --browser",
+    "eject": "react-scripts eject",
+    "electron": "electron .",
+    "dev": "nf start -p 3000",
+    "pack": "electron-builder --dir",
+    "dist-mac": "electron-builder",
+    "dist-win": "electron-builder --win"
+  },
+  "author": {
+    "name": "Garrett Criss",
+    "email": "astrolope@gmail.com",
+    "url": "http://lycrabeats.com"
+  }
+}

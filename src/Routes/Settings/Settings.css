@@ -1,0 +1,13 @@
+.logo {
+    position: absolute;
+    top: 10px;
+    
+}
+
+.menu-text {
+    font-size: 1.5rem;
+}
+
+div.ui.fluid.pointing.secondary.vertical.menu {
+    font-size: 1.5em !important;
+}

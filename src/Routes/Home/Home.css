@@ -1,0 +1,14 @@
+.fitted-window {
+
+    max-height: 100vh;
+    overflow-y: scroll;
+    height: 100%;
+    min-height: 100vh;
+    padding-top: 37.5px !important;
+    padding-left: 175px !important;
+    padding-bottom: 16vh !important;
+}
+
+.draggable {
+    -webkit-app-region: drag
+}
